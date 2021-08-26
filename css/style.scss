@@ -230,3 +230,60 @@ header {
         }
     }
 }
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+@media (max-width:768px) {
+    header {
+        .btn-menu {
+            display: initial;
+        }
+        .menu {
+            position: absolute;
+            top: 115%;
+            right: 2rem;
+            background: #fff;
+            box-shadow: var(--box-shadow);
+            border: var(--border);
+            border-radius: .5rem;
+            width: 30rem;
+            transform: scale(0);
+            transform-origin: top right;
+            opacity: 0;
+            a {
+                font-size: 2rem;
+                display: block;
+                padding: 1rem;
+                margin: 1rem;
+                border-radius: .5rem;
+                &:hover {
+                    background: var(--bg);
+                }
+            }
+
+        }
+        .active {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .inicio {
+        .content {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
