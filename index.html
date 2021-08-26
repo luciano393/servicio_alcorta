@@ -6,19 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicio Alcorta</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
+    <!-- Sección Barra de navegación -->
+    <header>
+        <a href="#" class="logo">Servicio<span>Alcorta</span></h1>
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#sobre">Sobre nosotros</a>
+            <a href="#reseñas">Reseñas</a>
+            <a href="#contact">Contacto</a>
+        </div>
+        <button class="btn-menu hamburger   hamburger--elastic" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <!-- Sección Inicio -->
+    <section class="inicio" id="inicio">
+        <div class="content">
+            <h3>Taller de chapa y pintura</h3>
+            <p>Somos un taller de chapa y pintura con 15 años en la misma ubicación y mas de 30 de experiencia en el rubro.</p>
+            <a href="#sobre" class="btn">Leer mas</a>
+        </div>
+        <div class="image">
+            <img src="./images/City driver-amico.png">
+        </div>
+    </section>
+    <!-- Sección Servicios -->
+    <section id="servicios" class="servicios">
+        <h1 class="heading">Nuestros servicios</h1>
+        <div class="box-container">
+            <div class="box">
+                <h3>Chapa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quod eaque doloremque?</p>
+                <a href="#" class="btn">Leer mas</a>
+            </div>
+            <div class="box">
+                <h3>Pintura</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quod eaque doloremque?</p>
+                <a href="#" class="btn">Leer mas</a>
+            </div>
+            <div class="box">
+                <h3>Estetica vehicular</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quod eaque doloremque?</p>
+                <a href="#" class="btn">Leer mas</a>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Sobre Nosotros -->
+    <section class="sobre" id="sobre">
+        <h1 class="heading">Sobre <span>Nosotros</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="./images/Price-pana.png" alt="">
+            </div>
+            <div class="content">
+                <h3>¿Necesitas un taller de confianza?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti soluta natus consequatur praesentium cupiditate perspiciatis architecto at vero eligendi quasi, consequuntur recusandae eius impedit neque ratione, voluptatum sequi nobis vel?</p>
+                <a href="#" class="btn">contact</a>
+            </div>
+        </div>
+    </section>
+    <!-- Sección reseñas -->
+    <section class="reseñas" id="reseñas">
+        <h1 class="heading">Reseñas</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="info">
+                    <div class="user">
+                        <img src="" alt="">
+                        <div class="stars">
+
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde, consequatur voluptates sapiente corrupti ratione.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="info">
+                    <div class="user">
+                        <img src="" alt="">
+                        <div class="stars">
+
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde, consequatur voluptates sapiente corrupti ratione.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="info">
+                    <div class="user">
+                        <img src="" alt="">
+                        <div class="stars">
+
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde, consequatur voluptates sapiente corrupti ratione.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección contacto -->
+    <section class="contacto" id="contacto">
+        <h1 class="heading">Contactate con nosotros</h1>
+        <div class="row">
+
+            <form action="">
     
+                <div class="inputBox">
+                    <input type="text" placeholder="nombre">
+                    <input type="email" placeholder="email">
+                </div>
     
-
+                <input type="text" placeholder="asunto" class="box">
     
-
-
-
+                <textarea placeholder="mensaje" name="" id="" cols="30" rows="10"></textarea>
+    
+                <input type="submit" class="btn" value="Enviar mensaje">
+    
+            </form>
+    </section>
 
 
     <!-- App -->
-    <script src="js/app.js"></script>
+    <script src="js/app.js" type="module"></script>
     <!-- Ion-icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
