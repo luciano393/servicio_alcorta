@@ -300,4 +300,62 @@ header .btn-menu {
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   text-transform: none;
 }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .btn-menu {
+    display: initial;
+  }
+  header .menu {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    background: #fff;
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    width: 30rem;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+    opacity: 0;
+  }
+  header .menu a {
+    font-size: 2rem;
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+  }
+  header .menu a:hover {
+    background: var(--bg);
+  }
+  header .active {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  .inicio .content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
