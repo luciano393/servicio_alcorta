@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --main-color: #0090a5;
-    --black:#333;
+    --main-color: #889cd9;
+    --black:#060606;
     --light-color:#555;
-    --bg: #d5d7e1;
+    --bg: #c1d5e8;
     --border:.1rem solid rgba(0,0,0,.1);
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
@@ -176,6 +176,46 @@ header {
                 font-size: 1.5rem;
                 line-height: 1.8;
                 padding: 1rem 0;
+            }
+        }
+    }
+}
+/* Sección reseñas */
+.reseñas .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    .box {
+        padding: 2rem;
+        border-radius: .5rem;
+        border: var(--border);
+        box-shadow: var(--box-shadow);
+        background: #fff;
+        p {
+            padding-top: 1rem;
+            font-size: 1.6rem;
+            line-height: 1.8;
+            color: var(--light-color);
+            font-style: italic;
+        }
+        .user {
+            display: flex;
+            align-items: center;
+            padding-bottom: 1rem;
+            img {
+                height: 6rem;
+                width: 6rem;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+            h3 {
+                font-size: 2.2rem;
+                color: var(--black);
+                padding-bottom: .5rem;
+            }
+            ion-icon {
+                font-size: 1.5rem;
+                color: var(--main-color);
             }
         }
     }
